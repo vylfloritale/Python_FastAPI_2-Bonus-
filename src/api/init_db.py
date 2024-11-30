@@ -44,7 +44,7 @@ def init_db():
             except Exception as e:
                 print(f"Error while indexing CVE {vulnerability.get('cveID', 'unknown')}: {e}")
     
-    # За завантаження даних з vulnerabilities у базу даних Elasticsearch
+    # Завантаження даних з vulnerabilities у базу даних Elasticsearch
     load_data()
 
     # Завершення виконання функції обробки запиту /init-db
